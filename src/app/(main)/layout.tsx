@@ -9,7 +9,7 @@ import { auth } from '@/auth'
 import ReactQueryProvider from '@/components/ReactQueryProvider'
 import { NextSSRPlugin } from '@uploadthing/react/next-ssr-plugin'
 import { extractRouterConfig } from 'uploadthing/server'
-import { fileRouter } from '../api/uploadthing/core'
+import { ourFileRouter } from '../api/uploadthing/core'
 
 const ibm = IBM_Plex_Sans_Thai({
   subsets: ['latin', 'thai'],
@@ -33,7 +33,7 @@ export default async function RootLayout({
         lang="en"
         className={cn('bg-white text-slate-900 antialiased', ibm.className)}
       >
-        <NextSSRPlugin routerConfig={extractRouterConfig(fileRouter)} />
+        <NextSSRPlugin routerConfig={extractRouterConfig(ourFileRouter)} />
         <ReactQueryProvider>
           <body className="min-h-screen mx-auto bg-slate-50 antialiased">
             <Navbar />
