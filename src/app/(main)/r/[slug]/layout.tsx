@@ -58,7 +58,7 @@ const Layout = async ({
   })
 
   return (
-    <div className="sm:container max-w-7xl mx-auto h-full pt-12">
+    <div className="sm:container max-w-7xl mx-auto h-full pt-6">
       <div>
         {/* Button Back */}
         <ToFeedButton />
@@ -67,7 +67,7 @@ const Layout = async ({
           <div className="flex flex-col col-span-2 space-y-6">{children}</div>
 
           {/* info sidebar */}
-          <div className="hidden md:block overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last">
+          <div className="hidden md:block overflow-hidden h-fit mt-20 rounded-lg border border-gray-200 order-first md:order-last">
             <div className="px-6 py-4">
               <p className="font-semibold py-3">About r/{subcuit.name}</p>
             </div>
